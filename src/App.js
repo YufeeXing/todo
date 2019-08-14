@@ -14,6 +14,7 @@ import { getUserSuccess } from './store/user'
 import LinearProgress from '@material-ui/core/LinearProgress';
 import FetchApi from './components/FetchApi';
 import { createHashHistory } from 'history';
+
 function App({ getUserSuccess, user }) {
   const [showLoading, setLoading] = React.useState(true);
   const onOk = result => getUserSuccess({ username: result.data.username });
